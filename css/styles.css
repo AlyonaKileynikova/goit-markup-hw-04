@@ -132,6 +132,7 @@ img {
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+    fill: #757575;
 }
 
 .contacts-icon:hover,
@@ -317,7 +318,7 @@ img {
 
 .team.section {
     background-color: #F5F4FA;
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin: 0 auto;
     flex-grow: 1;
 }
@@ -430,6 +431,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-top: 0;;
     margin-bottom: 50px;
 }
 
@@ -475,16 +477,11 @@ img {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin: 0 auto;
     flex-grow: 1;
     display: flex;
     justify-content: center;
-}
-
-.contacts-address {
-    /* display: flex; */
-
 }
 
 .logo-down {
@@ -499,8 +496,9 @@ img {
     color: #ffffff;
 }
 
-.address {
-    width: 231px;
+.address.container {
+    max-width: 231px;
+    margin: 0;
 }
 
 .address-title {
@@ -533,10 +531,14 @@ img {
     color: var(--accent-color);
 }
 
+.contacts-enjoy {
+    display: flex;
+}
+
 .enjoy {
     width: 206px;
-    height: 80px;
     padding: 0;
+    margin-left: 70px;
 }
 
 .enjoy-text {
