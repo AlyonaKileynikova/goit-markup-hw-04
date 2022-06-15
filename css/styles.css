@@ -127,50 +127,57 @@ img {
     cursor: pointer;
 }
 
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-item {
+    display: flex;
+}
 
 .contacts-icon {
-    align-items: center;
-    justify-content: center;
     margin-right: 10px;
     fill: #757575;
 }
 
-.contacts-icon:hover,
-.contacts-icon:focus {
-    fill: currentColor;
-}
-
-.top-tel {
+/* .top-tel {
     min-width: 122px;
-    margin-right: 15px;
+    /* margin-right: 15px;
 }
 
 .top-mail {
     margin-right: 50px;
     margin-left: auto;
+} */
+
+.contacts-item:not(:last-child) {
+    margin-right: 30px;
 }
 
-.top-mail, .top-tel {
+.top-mail-tel {
     display: flex;
+    align-items: center;
     color: var(--main-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    fill: var(--accent-color);
 }
 
-.top-mail:hover,
-.top-mail:focus {
+.top-mail-tel:hover,
+.top-mail-tel:focus {
     color: var(--accent-color);
 }
 
-.top-tel:hover,
-.top-tel:focus {
-    color: var(--accent-color);
+.top-mail-tel:hover .contacts-icon,
+.top-mail-tel:focus .contacts-icon {
+    fill: var(--accent-color);
 }
+
 
 /* ------------HERO-------- */
-
 
 .section {
     padding-top: 94px;
